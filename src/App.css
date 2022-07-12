@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700;800;900&display=swap');
+/* start global variables */
+:root {
+  --dark: #000;
+  --light: #fff;
+  --main-color: rgb(247,0,0);
+}
+/* end global variables */
+/* start global components */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+@media (min-width: 1024px) {
+  body {
+    overflow-y: hidden;
+  }
+}
+main {
+  width: 100vw;
+  height: 100vh;
+}
+@media screen and (max-width: 1024px) {
+  main {
+    height: 150vh;
+  }
+}
+#dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+#dark header {
+  background-color: var(--light);
+}
+#dark header span {
+  color: var(--dark);
+}
+#light {
+  background-color: var(--light);
+  color: var(--dark);
+}
+#light header {
+  background-color: var(--dark);
+}
+#light header span {
+  color: var(--light);
+}
+iframe {
+  width: 100%;
+  height: 99.5vh;
+}
+a,
+img {
+  user-select: none;
+}
+a {
+  text-decoration: none;
+}
+::selection {
+  background-color: var(--main-color);
+  color: var(--light);
+}
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.toggle-slot {
+  position: relative;
+  left: 88%;
+  top: -6%;
+  display: inline-block;
+  height: 2em;
+  width: 4em;
+  border: 5px solid #e4e7ec;
+  border-radius: 10em;
+  background-color: var(--light);
+  transition: background-color 250ms;
+}
+@media screen and (max-width: 1024px) {
+  .toggle-slot {
+    left: 58%;
+  }
+}
+.toggle-checkbox:checked ~ .toggle-slot {
+  background-color: #374151;
+}
+.toggle-button {
+  transform: translate(11.75em, 1.75em);
+  position: absolute;
+  top: -120%;
+  right: 410%;
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: 50%;
+  background-color: #ffeccf;
+  box-shadow: inset 0px 0px 0px 0.75em var(--main-color);
+  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+  background-color: #485367;
+  transform: translate(13.75em, 1.75em);
+}
+.sun-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: var(--main-color);
+}
+.sun-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(15deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2,.46,.71);
+}
+.toggle-checkbox:checked ~ .toggle-slot .sun-icon-wrapper {
+  opacity: 0;
+  transform: translate(3em, 2em) rotate(0deg);
+}
+.moon-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: var(--light);
+}
+.moon-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 0;
+  transform: translate(2em, 2em) rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26,2.5,.46,.71);
+}
+.toggle-checkbox:checked ~ .toggle-slot .moon-icon-wrapper {
+  opacity: 1;
+  transform: translate(2em, 0.2em) rotate(-15deg);
+  background-color: var(--main-color);
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+section {
+  width: 100vw;
+  height: 100vh;
+}
+.qlONe {
+  height: 100vh !important;
+}
+/* end global components */

@@ -1,0 +1,119 @@
+.climate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 1024px) {
+  .climate {
+    overflow-y: scroll;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.climate .left-part .content h1 {
+  margin: 1rem 0;
+  text-align: center;
+  font-size: 2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(#fff), to(#000));
+  background: linear-gradient(90deg, #000, #fff, #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-animation: shine 5s linear infinite;
+          animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .climate .left-part .content h1 {
+    font-size: 1rem;
+  }
+}
+
+@-webkit-keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+.climate .left-part .content p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .climate .left-part .content p {
+    font-size: 0.8rem;
+  }
+}
+
+.climate .right-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.climate .right-part .climate-heading span {
+  font-size: 15rem;
+  -webkit-text-fill-color: var(--dark);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--light);
+}
+
+@media screen and (max-width: 1024px) {
+  .climate .right-part .climate-heading span {
+    font-size: 5rem;
+  }
+}
+
+.climate .right-part .climate-heading h1 {
+  margin-right: 1rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.climate .right-part video {
+  width: 70%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .climate .right-part video {
+    width: 76%;
+  }
+}
+/*# sourceMappingURL=climate.css.map */

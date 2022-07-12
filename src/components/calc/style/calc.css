@@ -1,0 +1,97 @@
+@media (min-width: 1025px) {
+  .argeements-media {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .argeements {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .argeements-media {
+    overflow-y: scroll;
+  }
+}
+
+.argeements, .argeements-media {
+  width: 100vw;
+  height: 100vh;
+}
+
+.argeements .agreements-1, .argeements-media .agreements-1 {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 1.2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .argeements .agreements-1, .argeements-media .agreements-1 {
+    margin-left: 0;
+    height: 150vh;
+  }
+}
+
+.argeements .agreements-1 .agreements-heading span, .argeements-media .agreements-1 .agreements-heading span {
+  font-size: 2rem;
+  -webkit-text-fill-color: var(--dark);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--light);
+}
+
+@media screen and (max-width: 1024px) {
+  .argeements .agreements-1 .agreements-heading span, .argeements-media .agreements-1 .agreements-heading span {
+    font-size: 5rem;
+  }
+}
+
+.argeements .agreements-1 .agreements-heading h1, .argeements-media .agreements-1 .agreements-heading h1 {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 1024px) {
+  .argeements .agreements-1 .first-agreement h1, .argeements .agreements-1 .second-agreement h1, .argeements-media .agreements-1 .first-agreement h1, .argeements-media .agreements-1 .second-agreement h1 {
+    font-size: 1rem;
+  }
+}
+
+.argeements .agreements-1 .first-agreement p, .argeements .agreements-1 .second-agreement p, .argeements-media .agreements-1 .first-agreement p, .argeements-media .agreements-1 .second-agreement p {
+  margin: 1.2rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .argeements .agreements-1 .first-agreement p, .argeements .agreements-1 .second-agreement p, .argeements-media .agreements-1 .first-agreement p, .argeements-media .agreements-1 .second-agreement p {
+    font-size: 0.8rem;
+  }
+}
+
+.argeements .agreements-2, .argeements-media .agreements-2 {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .argeements .agreements-2, .argeements-media .agreements-2 {
+    margin-left: 0;
+  }
+}
+
+.argeements .agreements-2 .first-agreement p, .argeements-media .agreements-2 .first-agreement p {
+  margin-top: 2rem;
+  line-height: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+  .argeements .agreements-2 .first-agreement p, .argeements-media .agreements-2 .first-agreement p {
+    font-size: 0.8rem;
+    line-height: 20px;
+    margin-top: 1rem;
+  }
+}
+/*# sourceMappingURL=calc.css.map */

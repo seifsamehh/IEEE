@@ -1,0 +1,64 @@
+.about {
+  width: 100vw;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1024px) {
+  .about {
+    overflow-x: scroll;
+  }
+}
+
+.about .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .cards .card-1,
+.about .cards .card-2,
+.about .cards .card-3,
+.about .cards .card-4 {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+}
+
+.about .cards .card-1 img,
+.about .cards .card-2 img,
+.about .cards .card-3 img,
+.about .cards .card-4 img {
+  width: 100%;
+}
+
+.about .cards .card-1 h1,
+.about .cards .card-1 h3,
+.about .cards .card-2 h1,
+.about .cards .card-2 h3,
+.about .cards .card-3 h1,
+.about .cards .card-3 h3,
+.about .cards .card-4 h1,
+.about .cards .card-4 h3 {
+  text-align: center;
+}
+/*# sourceMappingURL=about.css.map */

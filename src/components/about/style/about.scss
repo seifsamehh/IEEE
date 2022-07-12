@@ -1,0 +1,31 @@
+.about {
+    width: 100vw;
+    height: 100vh;
+    @media screen and (max-width: 1024px) {
+        overflow-x: scroll;
+    }
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .card-1,
+        .card-2,
+        .card-3,
+        .card-4 {
+            background: rgba(255,255,255,0.5);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 400px;
+            img {
+                width: 100%;
+            }
+            h1,
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+}

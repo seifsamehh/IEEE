@@ -1,0 +1,8 @@
+export {default as Header} from './header/Header'
+export {default as Home} from './home/Home'
+export {default as Intro} from './intro/Intro'
+export {default as Climate} from './climate/Climate'
+export {default as Cateogry} from './cateogry/Cateogry'
+export {default as Awarnass} from './awarnass/Awarnass'
+export {default as Calc} from './calc/Calc'
+export {default as About} from './about/About'

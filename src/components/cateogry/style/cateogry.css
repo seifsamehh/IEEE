@@ -1,0 +1,218 @@
+@media (min-width: 1025px) {
+  .cateogry-media {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cateogry {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cateogry-media {
+    overflow-y: scroll;
+  }
+}
+
+.cateogry, .cateogry-media {
+  width: 100vw;
+  height: 100vh;
+}
+
+.cateogry .cateogry-1 .left .cateogry-heading, .cateogry-media .cateogry-1 .left .cateogry-heading {
+  position: absolute;
+  top: -10%;
+}
+
+@media screen and (max-width: 1024px) {
+  .cateogry .cateogry-1 .left .cateogry-heading, .cateogry-media .cateogry-1 .left .cateogry-heading {
+    top: 20%;
+    z-index: 10;
+  }
+}
+
+.cateogry .cateogry-1 .left .cateogry-heading span, .cateogry-media .cateogry-1 .left .cateogry-heading span {
+  font-size: 15rem;
+  -webkit-text-fill-color: var(--dark);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--light);
+}
+
+@media screen and (max-width: 1024px) {
+  .cateogry .cateogry-1 .left .cateogry-heading span, .cateogry-media .cateogry-1 .left .cateogry-heading span {
+    font-size: 5rem;
+  }
+}
+
+.cateogry .cateogry-1 .left .cateogry-heading h1, .cateogry-media .cateogry-1 .left .cateogry-heading h1 {
+  margin-right: 1rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.cateogry .cateogry-1,
+.cateogry .cateogry-2,
+.cateogry .cateogry-3,
+.cateogry .cateogry-4,
+.cateogry .cateogry-5,
+.cateogry .cateogry-6,
+.cateogry .cateogry-7,
+.cateogry .cateogry-8, .cateogry-media .cateogry-1,
+.cateogry-media .cateogry-2,
+.cateogry-media .cateogry-3,
+.cateogry-media .cateogry-4,
+.cateogry-media .cateogry-5,
+.cateogry-media .cateogry-6,
+.cateogry-media .cateogry-7,
+.cateogry-media .cateogry-8 {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .cateogry .cateogry-1,
+  .cateogry .cateogry-2,
+  .cateogry .cateogry-3,
+  .cateogry .cateogry-4,
+  .cateogry .cateogry-5,
+  .cateogry .cateogry-6,
+  .cateogry .cateogry-7,
+  .cateogry .cateogry-8, .cateogry-media .cateogry-1,
+  .cateogry-media .cateogry-2,
+  .cateogry-media .cateogry-3,
+  .cateogry-media .cateogry-4,
+  .cateogry-media .cateogry-5,
+  .cateogry-media .cateogry-6,
+  .cateogry-media .cateogry-7,
+  .cateogry-media .cateogry-8 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.cateogry .cateogry-1 .left .card,
+.cateogry .cateogry-2 .left .card,
+.cateogry .cateogry-3 .left .card,
+.cateogry .cateogry-4 .left .card,
+.cateogry .cateogry-5 .left .card,
+.cateogry .cateogry-6 .left .card,
+.cateogry .cateogry-7 .left .card,
+.cateogry .cateogry-8 .left .card, .cateogry-media .cateogry-1 .left .card,
+.cateogry-media .cateogry-2 .left .card,
+.cateogry-media .cateogry-3 .left .card,
+.cateogry-media .cateogry-4 .left .card,
+.cateogry-media .cateogry-5 .left .card,
+.cateogry-media .cateogry-6 .left .card,
+.cateogry-media .cateogry-7 .left .card,
+.cateogry-media .cateogry-8 .left .card {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cateogry .cateogry-1 .left .card img,
+.cateogry .cateogry-2 .left .card img,
+.cateogry .cateogry-3 .left .card img,
+.cateogry .cateogry-4 .left .card img,
+.cateogry .cateogry-5 .left .card img,
+.cateogry .cateogry-6 .left .card img,
+.cateogry .cateogry-7 .left .card img,
+.cateogry .cateogry-8 .left .card img, .cateogry-media .cateogry-1 .left .card img,
+.cateogry-media .cateogry-2 .left .card img,
+.cateogry-media .cateogry-3 .left .card img,
+.cateogry-media .cateogry-4 .left .card img,
+.cateogry-media .cateogry-5 .left .card img,
+.cateogry-media .cateogry-6 .left .card img,
+.cateogry-media .cateogry-7 .left .card img,
+.cateogry-media .cateogry-8 .left .card img {
+  width: 50%;
+  height: 100%;
+}
+
+.cateogry .cateogry-1 .left .card h1,
+.cateogry .cateogry-2 .left .card h1,
+.cateogry .cateogry-3 .left .card h1,
+.cateogry .cateogry-4 .left .card h1,
+.cateogry .cateogry-5 .left .card h1,
+.cateogry .cateogry-6 .left .card h1,
+.cateogry .cateogry-7 .left .card h1,
+.cateogry .cateogry-8 .left .card h1, .cateogry-media .cateogry-1 .left .card h1,
+.cateogry-media .cateogry-2 .left .card h1,
+.cateogry-media .cateogry-3 .left .card h1,
+.cateogry-media .cateogry-4 .left .card h1,
+.cateogry-media .cateogry-5 .left .card h1,
+.cateogry-media .cateogry-6 .left .card h1,
+.cateogry-media .cateogry-7 .left .card h1,
+.cateogry-media .cateogry-8 .left .card h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+
+.cateogry .cateogry-1 .right,
+.cateogry .cateogry-2 .right,
+.cateogry .cateogry-3 .right,
+.cateogry .cateogry-4 .right,
+.cateogry .cateogry-5 .right,
+.cateogry .cateogry-6 .right,
+.cateogry .cateogry-7 .right,
+.cateogry .cateogry-8 .right, .cateogry-media .cateogry-1 .right,
+.cateogry-media .cateogry-2 .right,
+.cateogry-media .cateogry-3 .right,
+.cateogry-media .cateogry-4 .right,
+.cateogry-media .cateogry-5 .right,
+.cateogry-media .cateogry-6 .right,
+.cateogry-media .cateogry-7 .right,
+.cateogry-media .cateogry-8 .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cateogry .cateogry-1 .right video,
+.cateogry .cateogry-2 .right video,
+.cateogry .cateogry-3 .right video,
+.cateogry .cateogry-4 .right video,
+.cateogry .cateogry-5 .right video,
+.cateogry .cateogry-6 .right video,
+.cateogry .cateogry-7 .right video,
+.cateogry .cateogry-8 .right video, .cateogry-media .cateogry-1 .right video,
+.cateogry-media .cateogry-2 .right video,
+.cateogry-media .cateogry-3 .right video,
+.cateogry-media .cateogry-4 .right video,
+.cateogry-media .cateogry-5 .right video,
+.cateogry-media .cateogry-6 .right video,
+.cateogry-media .cateogry-7 .right video,
+.cateogry-media .cateogry-8 .right video {
+  width: 80%;
+  height: 100%;
+}
+/*# sourceMappingURL=cateogry.css.map */

@@ -1,0 +1,87 @@
+.cateogry-media {
+    @media (min-width: 1025px) {
+        display: none;
+    }
+}
+.cateogry {
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+.cateogry-media {
+    @media screen and (max-width: 1024px) {
+        overflow-y: scroll;
+    }
+}
+.cateogry,.cateogry-media {
+    width: 100vw;
+    height: 100vh;
+    .cateogry-1 {
+        .left {
+            .cateogry-heading {
+                position: absolute;
+                top: -10%;
+                @media screen and (max-width: 1024px) {
+                    top: 20%;
+                    z-index: 10;
+                }
+                span {
+                    font-size: 15rem;
+                    -webkit-text-fill-color: var(--dark);
+                    -webkit-text-stroke-width: 2px;
+                    -webkit-text-stroke-color: var(--light);
+                    @media screen and (max-width: 1024px) {
+                        font-size: 5rem;
+                    }
+                }
+                h1 {
+                    margin-right: 1rem;
+                    font-size: 1.7rem;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+    .cateogry-1,
+    .cateogry-2,
+    .cateogry-3,
+    .cateogry-4,
+    .cateogry-5,
+    .cateogry-6,
+    .cateogry-7,
+    .cateogry-8 {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+        .left {
+            .card {
+                background: rgba(255,255,255,0.5);
+                backdrop-filter: blur(10px);
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                img {
+                    width: 50%;
+                    height: 100%;
+                }
+                h1 {
+                    user-select: none;
+                    text-align: center;
+                }
+            }
+        }
+        .right {
+            display: flex;
+            justify-content: flex-end;
+            video {
+                width: 80%;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.climate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (max-width: 1024px) {
+        overflow-y: scroll;
+        justify-content: flex-start;
+    }
+    .left-part {
+        .content {
+            h1 {
+                margin: 1rem 0;
+                text-align: center;
+                font-size: 2rem;
+                background: linear-gradient(90deg, #000, #fff, #000);
+                letter-spacing: 5px;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-repeat: no-repeat;
+                background-size: 80%;
+                animation: shine 5s linear infinite;
+                position: relative;
+                @media screen and (max-width: 1024px) {
+                    font-size: 1rem;
+                }
+                @keyframes shine {
+                    0% {
+                      background-position-x: -500%;
+                    }
+                    100% {
+                      background-position-x: 500%;
+                    }
+                  }
+            }
+            p {
+                text-align: center;
+                font-size: 1.1rem;
+                @media screen and (max-width: 1024px) {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    .right-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .climate-heading {
+            span {
+                font-size: 15rem;
+                -webkit-text-fill-color: var(--dark);
+                -webkit-text-stroke-width: 2px;
+                -webkit-text-stroke-color: var(--light);
+                @media screen and (max-width: 1024px) {
+                    font-size: 5rem;
+                }
+            }
+            h1 {
+                margin-right: 1rem;
+                font-size: 1.7rem;
+                font-weight: 200;
+            }
+        }
+        video {
+            width: 70%;
+            height: 100%;
+            @media screen and (max-width: 1024px) {
+                width: 76%;
+            }
+        }
+    }
+}
